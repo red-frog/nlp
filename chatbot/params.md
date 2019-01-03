@@ -1,0 +1,24 @@
+# 设置参数调优说明
+
+- bidirectional: true
+    - 是否用双向网络
+- use_residual: false
+    - 是否使用参差网络
+- use_dropout: false
+    - 
+- time_major: false
+    - 
+- cell_type: lstm
+    - 有lstm或gru
+- depth: 2
+    - 可以多层(深度与越大,速度越慢, 精度越高)
+- attention_type: Bahdanau
+    - 
+- hidden_units: 128
+    - 一般128已经够用了
+- optimizer: adam
+    - 其他优化器都可以尝试
+- learning_rate: 0.001
+    - 一般学习率都是0.01
+- embedding_size: 300
+    - 300-450就够了
